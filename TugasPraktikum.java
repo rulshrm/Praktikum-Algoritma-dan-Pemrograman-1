@@ -1,62 +1,59 @@
 import java.util.*;
 public class TugasPraktikum {
   public static void main (String[] args){
+    Scanner input = new Scanner(System.in);
     // Jenis Kendaraan
-    int motor = 100000;
-    int mobil = 200000;
+    final int MOTOR_TARIF = 100000;
+    final int MOBIL_TARIF = 200000;
     
     // Tahun Kendaraan
-    int usia_kendaraan_lebih_10tahun = 50000;
-    
+    final int USIA_KENDARAAN_TUA = 50000;
+
     // Profil Pengemudi
-    int usia_pengemudi_dibawah_25tahun = 100000;
-    int memiliki_riwayat_kecelakaan = 150000;
+    final int USIA_PENGEMUDI_MUDA = 100000;
+    final int RIWAYAT_KECELAKAAN = 150000;
     
     // Total Tarif
-    int total_tarif = 0;
-
-    Scanner input = new Scanner(System.in);
+    int totalTarif = 0;
 
     System.out.print("Masukan jenis kendaraan: ");
-    String jenis_kendaraan = input.nextLine().toLowerCase();
+    String jenisKendaraan = input.nextLine().toLowerCase();
 
     System.out.print("Masukan tahun pembuatan kendaraaan: ");
-    int tahun_pembuatan_kendaraan = input.nextInt();
+    int tahunPembuatanKendaraan = input.nextInt();
 
     System.out.print("Masukan usia pengemudi: ");
-    int usia_pengemudi = input.nextInt();
+    int usiaPengemudi = input.nextInt();
 
     input.nextLine();
+    System.out.print("Apakah memiliki riwayat Kecelakaan? (ya/tidak): ");
+    String riwayatKecelakaan = input.nextLine().toLowerCase();
 
-    System.out.print("Apakah memiliki riwayat Kecelakaan? ya/tidak: ");
-    String riwayat_kecelakaan = input.nextLine().toLowerCase();
+    System.out.println("\n===rincian tarif===");
 
-    System.out.println("");
-    System.out.println("===rincian tarif===");
-
-    if (jenis_kendaraan.equals("mobil")) {
-      System.out.println("Tarif Dasar: Rp"+mobil);
-      total_tarif += mobil;
-    } else if (jenis_kendaraan.equals("motor")) {
-      System.out.println("Tarif Dasar: Rp" + motor);
-      total_tarif += motor;
-    };
-    
-    if (tahun_pembuatan_kendaraan > 10){
-      System.out.println("Tambahan Biaya kendaraan tua: Rp"+usia_kendaraan_lebih_10tahun);
-      total_tarif += usia_kendaraan_lebih_10tahun;
+    if (jenisKendaraan.equals("mobil")) {
+      System.out.println("Tarif Dasar: Rp"+MOBIL_TARIF);
+      totalTarif += MOBIL_TARIF;
+    } else if (jenisKendaraan.equals("motor")) {
+      System.out.println("Tarif Dasar: Rp" + MOTOR_TARIF);
+      totalTarif += MOTOR_TARIF;
     }
 
-    if (usia_pengemudi < usia_pengemudi_dibawah_25tahun) {
-      System.out.println("Tambahan Biaya usia pengemudi: Rp"+usia_pengemudi_dibawah_25tahun);
-      total_tarif += usia_pengemudi_dibawah_25tahun;
+    if (tahunPembuatanKendaraan < 2014){ // Tahun lebih dari 10 Tahun
+      System.out.println("Tambahan Biaya kendaraan tua: Rp"+USIA_KENDARAAN_TUA);
+      totalTarif += USIA_KENDARAAN_TUA;
     }
 
-    if (riwayat_kecelakaan.equalsIgnoreCase("ya")) {
-      System.out.println("Biaya Riwayat kecelakaan: Rp"+memiliki_riwayat_kecelakaan);
-      total_tarif += memiliki_riwayat_kecelakaan;
+    if (usiaPengemudi < USIA_PENGEMUDI_MUDA) {
+      System.out.println("Tambahan Biaya usia pengemudi: Rp"+USIA_PENGEMUDI_MUDA);
+      totalTarif += USIA_PENGEMUDI_MUDA;
+    }
+
+    if (riwayatKecelakaan.equalsIgnoreCase("ya")) {
+      System.out.println("Biaya Riwayat kecelakaan: Rp"+RIWAYAT_KECELAKAAN);
+      totalTarif += RIWAYAT_KECELAKAAN;
     } 
-    System.out.println("total tarif: Rp" + total_tarif);
+    System.out.println("total tarif: Rp" + totalTarif);
   }
 
 }
