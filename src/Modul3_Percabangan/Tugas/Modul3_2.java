@@ -17,6 +17,7 @@ public class Modul3_2 {
     int totalBelanja = input.nextInt();
     System.out.print("Input nomor transaksi: ");
     int nomorTransaksi = input.nextInt();
+    input.close();
 
     if (totalBelanja > 50000) {
       potongan += (totalBelanja * diskonBelanja/100);
@@ -29,7 +30,6 @@ public class Modul3_2 {
     System.out.println("=".repeat(40));
     System.out.println("Jumlah potongan harga: Rp " + potongan);
     System.out.println("Jumlah yang harus dibayar: Rp " + totalHarga);
-    input.close();
   }
 }
 
