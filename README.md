@@ -1,7 +1,7 @@
 # Praktikum-Algoritma-dan-Pemrograman-1
 
 # Struktur Direktori
-
+```
 ├── Praktikum-Algoritma-dan-Pemrograman-1/
 │   ├── JavaSekilasPandang/
 │   │   └── README.md
@@ -84,3 +84,4 @@
 │   │   └── README.md
 │   └── README.md
 └── README.md
+```
