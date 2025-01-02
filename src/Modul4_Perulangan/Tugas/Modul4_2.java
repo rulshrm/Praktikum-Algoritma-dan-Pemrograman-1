@@ -3,7 +3,7 @@ package Modul4_Perulangan.Tugas;
 import java.util.Scanner;
 
 public class Modul4_2 {
-public static void main(String[] args) {
+  public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
     System.out.print("Masukan berapa biaya awal: ");
