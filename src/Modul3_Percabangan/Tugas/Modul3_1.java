@@ -6,11 +6,13 @@ public class Modul3_1 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
+    // Deklarasi variabel
     int upahKerjaNormal = 5000;
     int upahKerjaLembur = 7500;
     int upahPotonganKerja = 2500;
     int totalGaji = 0;
 
+    // Input jam kerja
     System.out.print("Masukan jam kerja/minggu: ");
     int jamKerja = input.nextInt();
 
@@ -18,8 +20,8 @@ public class Modul3_1 {
       totalGaji = jamKerja * upahKerjaNormal;
     } else if (jamKerja > 60) {
       totalGaji = (60 * upahKerjaNormal) + ((jamKerja - 60) * upahKerjaLembur);
-    } else if (jamKerja<= 50) {
-      totalGaji = (jamKerja * upahKerjaNormal) - (jamKerja * upahPotonganKerja);
+    } else if (jamKerja < 50) {
+      totalGaji = (jamKerja * upahKerjaNormal) - ((50 - jamKerja) * upahPotonganKerja);
     }
     System.out.println("Total gaji: Rp " + totalGaji);
   }
