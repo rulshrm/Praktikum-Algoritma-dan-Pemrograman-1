@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-        <mxGraphModel dx="1587" dy="736" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1351" dy="744" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
@@ -90,6 +90,9 @@
                 <mxCell id="32K8P8o3c46-vZ3ChS1r-39" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;input: Tahun Pembuatan Kendaraan&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
                     <mxGeometry x="592" y="782" width="120" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="17" value="" style="edgeStyle=none;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="32K8P8o3c46-vZ3ChS1r-49" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="32K8P8o3c46-vZ3ChS1r-49" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;Output:&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;b&gt;totalTarif&lt;/b&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
                     <mxGeometry x="631.5" y="1621" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -177,6 +180,9 @@
                 </mxCell>
                 <mxCell id="9" value="Tidak ada Biaya Tambahan" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
                     <mxGeometry x="592" y="1495.5" width="199" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;b&gt;SELESAI&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=37;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="631.5" y="1742" width="120" height="34" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

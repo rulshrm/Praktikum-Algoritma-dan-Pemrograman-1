@@ -53,7 +53,7 @@ public class TugasPraktikum {
       totalTarif += USIA_PENGEMUDI_MUDA;
     }
 
-    // Mengecek riwayat kecelakaan
+    // Mengecek riwayat kecelakaan 
     if (riwayatKecelakaan.equalsIgnoreCase("ya")) {
       System.out.println("Biaya Riwayat kecelakaan: Rp" + RIWAYAT_KECELAKAAN);
       totalTarif += RIWAYAT_KECELAKAAN;
